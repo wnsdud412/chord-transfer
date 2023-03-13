@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/wnsdud412.github.io/chord-transfer/static/css/main.756af292.css",
-    "main.js": "/wnsdud412.github.io/chord-transfer/static/js/main.2eba855f.js",
-    "static/js/787.4cae2c32.chunk.js": "/wnsdud412.github.io/chord-transfer/static/js/787.4cae2c32.chunk.js",
-    "index.html": "/wnsdud412.github.io/chord-transfer/index.html",
-    "main.756af292.css.map": "/wnsdud412.github.io/chord-transfer/static/css/main.756af292.css.map",
-    "main.2eba855f.js.map": "/wnsdud412.github.io/chord-transfer/static/js/main.2eba855f.js.map",
-    "787.4cae2c32.chunk.js.map": "/wnsdud412.github.io/chord-transfer/static/js/787.4cae2c32.chunk.js.map"
+    "main.css": "/chord-transfer/static/css/main.756af292.css",
+    "main.js": "/chord-transfer/static/js/main.6c77b4ca.js",
+    "static/js/787.4cae2c32.chunk.js": "/chord-transfer/static/js/787.4cae2c32.chunk.js",
+    "index.html": "/chord-transfer/index.html",
+    "main.756af292.css.map": "/chord-transfer/static/css/main.756af292.css.map",
+    "main.6c77b4ca.js.map": "/chord-transfer/static/js/main.6c77b4ca.js.map",
+    "787.4cae2c32.chunk.js.map": "/chord-transfer/static/js/787.4cae2c32.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.756af292.css",
-    "static/js/main.2eba855f.js"
+    "static/js/main.6c77b4ca.js"
   ]
 }
