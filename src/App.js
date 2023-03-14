@@ -9,7 +9,7 @@ import Img from './component/score/ScoreImg';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" element={<HOME/>} />
           <Route path="/chordtransfer/" element={<ChordTransfer/>} />

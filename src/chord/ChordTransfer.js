@@ -33,10 +33,10 @@ const ChordMain = (props) => {
           alterdChord = Transposer.transpose(chords).toKey(alterKey).toString()
           break;
         case "up":
-          alterdChord = Transposer.transpose(chords).up(alterKey).toString()
+          alterdChord = Transposer.transpose(chords).up(Number(alterKey)).toString()
           break;
         case "down":
-          alterdChord = Transposer.transpose(chords).down(alterKey).toString()
+          alterdChord = Transposer.transpose(chords).down(Number(alterKey)).toString()
           break;
       }
       setResult(alterdChord)
@@ -52,21 +52,24 @@ const ChordMain = (props) => {
     <Container>
       <h2 className="m-3">코드 변환기</h2>
       <Form>
-        <FloatingLabel controlId="inputChord" label="Chords" className="mb-3">
+        <FloatingLabel controlId="inputChord" label="코드" className="mb-3 text-start">
           <Form.Control required type="text" placeholder="Chords" onChange={changeChords}/>
+          <Form.Text id="explanation chords">
+            변환하고자 하는 악보 코드를 한칸씩 띄워서 입력하세요(ex: C Em F)
+          </Form.Text>
         </FloatingLabel>
         <Row>
           <Col sm={4}>
-            <FloatingLabel controlId="alterTypeSelect" label="AlterType">
+            <FloatingLabel controlId="alterTypeSelect" label="변환타입">
               <Form.Select aria-label="Floating label select example" onChange={changeAlterType}>
-                <option value="key">To Key</option>
-                <option value="up">Up</option>
-                <option value="down">Down</option>
+                <option value="key">지정키</option>
+                <option value="up">#샵</option>
+                <option value="down">b플랫</option>
               </Form.Select>
             </FloatingLabel>
           </Col>
           <Col sm={8}>
-            <FloatingLabel controlId="inputAlterKey" label="AlterKey" className="mb-3">
+            <FloatingLabel controlId="inputAlterKey" label="변환목표" className="mb-3">
               <Form.Control required type="text" placeholder="AlterKey" onChange={changeAlterKey}/>
             </FloatingLabel>
           </Col>
